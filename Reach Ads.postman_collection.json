@@ -1,0 +1,349 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Reach Ads",
+		"_postman_id": "6dd5aae7-e5e5-9684-7f55-87b8dc9bbcac",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"description": "",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"url": "http://127.0.0.1:8000/api/category/add",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\":\"cat 3\",\n\t\"description\":\"category3 2021\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get details",
+					"request": {
+						"url": "http://127.0.0.1:8000/api/category/details/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\":\"cat 1\",\n\t\"description\":\"category1 2021\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"url": "http://127.0.0.1:8000/api/category/all",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\":\"cat 1\",\n\t\"description\":\"category1 2021\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"url": "http://127.0.0.1:8000/api/category/edit/5",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\":\"cat 5\",\n\t\"description\":\"category5 2021\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"url": "http://127.0.0.1:8000/api/category/delete/3",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tags",
+			"description": "",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"url": "http://127.0.0.1:8000/api/tag/add",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\":\"tag 4\",\n\t\"description\":\"tag4 2021\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get details",
+					"request": {
+						"url": "http://127.0.0.1:8000/api/tag/details/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\":\"cat 1\",\n\t\"description\":\"category1 2021\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"url": "http://127.0.0.1:8000/api/tag/all",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\":\"cat 1\",\n\t\"description\":\"category1 2021\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"url": "http://127.0.0.1:8000/api/tag/edit/5",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\":\"tag 5\",\n\t\"description\":\"tag5 2021\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"url": "http://127.0.0.1:8000/api/tag/delete/3",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ads",
+			"description": "",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"url": "http://127.0.0.1:8000/api/ads/add",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\":\"ad 20\", \n    \"type\":\"free\",\n    \"category_id\":4,\n    \"advertiser_id\":3,\n    \"tags_ids\" :[1,2],\n    \"start_date\"  : \"2021-07-09\",\n\t\"description\":\"ad20 2021\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get details",
+					"request": {
+						"url": "http://127.0.0.1:8000/api/ads/details/13",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\":\"cat 1\",\n\t\"description\":\"category1 2021\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"url": "http://127.0.0.1:8000/api/ads/all",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"category_ids\":[3,1],\n\t\"tags_ids\":[4]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"url": "http://127.0.0.1:8000/api/ads/edit/1",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\":\"ad first\", \n    \"type\":\"paid\",\n    \"category_id\":3,\n    \"advertiser_id\":3,\n    \"tags_ids\" :[1,2,4],\n    \"start_date\"  : \"2021-07-09\",\n\t\"description\":\"ad first 2021\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"url": "http://127.0.0.1:8000/api/ads/delete/3",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "advertiser ads",
+					"request": {
+						"url": "http://127.0.0.1:8000/api/ads/advertiser/3",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

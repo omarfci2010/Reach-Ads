@@ -1,0 +1,792 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "Reach Ads",
+    "description": "",
+    "contact": {}
+  },
+  "host": "127.0.0.1:8000",
+  "basePath": "/api",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/category/add": {
+      "post": {
+        "description": "",
+        "summary": "add",
+        "tags": [
+          "Category"
+        ],
+        "operationId": "add",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/addrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/category/details/1": {
+      "get": {
+        "description": "",
+        "summary": "get details",
+        "tags": [
+          "Category"
+        ],
+        "operationId": "getdetails",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/category/all": {
+      "get": {
+        "description": "",
+        "summary": "get all",
+        "tags": [
+          "Category"
+        ],
+        "operationId": "getall",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/category/edit/5": {
+      "patch": {
+        "description": "",
+        "summary": "edit",
+        "tags": [
+          "Category"
+        ],
+        "operationId": "edit",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/editrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/category/delete/3": {
+      "delete": {
+        "description": "",
+        "summary": "delete",
+        "tags": [
+          "Category"
+        ],
+        "operationId": "delete",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/tag/add": {
+      "post": {
+        "description": "",
+        "summary": "add",
+        "tags": [
+          "Tags"
+        ],
+        "operationId": "Postadd",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/addrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/tag/details/1": {
+      "get": {
+        "description": "",
+        "summary": "get details",
+        "tags": [
+          "Tags"
+        ],
+        "operationId": "Getgetdetails",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/tag/all": {
+      "get": {
+        "description": "",
+        "summary": "get all",
+        "tags": [
+          "Tags"
+        ],
+        "operationId": "Getgetall",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/tag/edit/5": {
+      "patch": {
+        "description": "",
+        "summary": "edit",
+        "tags": [
+          "Tags"
+        ],
+        "operationId": "Patchedit",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/editrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/tag/delete/3": {
+      "delete": {
+        "description": "",
+        "summary": "delete",
+        "tags": [
+          "Tags"
+        ],
+        "operationId": "Deletedelete",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/ads/add": {
+      "post": {
+        "description": "",
+        "summary": "add",
+        "tags": [
+          "Ads"
+        ],
+        "operationId": "Postadd1",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/addrequest2"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/ads/details/13": {
+      "get": {
+        "description": "",
+        "summary": "get details",
+        "tags": [
+          "Ads"
+        ],
+        "operationId": "Getgetdetails1",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/ads/all": {
+      "post": {
+        "description": "",
+        "summary": "get all",
+        "tags": [
+          "Ads"
+        ],
+        "operationId": "Postgetall",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/getallrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/ads/edit/1": {
+      "patch": {
+        "description": "",
+        "summary": "edit",
+        "tags": [
+          "Ads"
+        ],
+        "operationId": "Patchedit1",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/editrequest2"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/ads/delete/3": {
+      "delete": {
+        "description": "",
+        "summary": "delete",
+        "tags": [
+          "Ads"
+        ],
+        "operationId": "Deletedelete1",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/ads/advertiser/3": {
+      "get": {
+        "description": "",
+        "summary": "advertiser ads",
+        "tags": [
+          "Ads"
+        ],
+        "operationId": "advertiserads",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "addrequest": {
+      "title": "addrequest",
+      "example": {
+        "title": "cat 3",
+        "description": "category3 2021"
+      },
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title"
+      ]
+    },
+    "editrequest": {
+      "title": "editrequest",
+      "example": {
+        "title": "cat 5",
+        "description": "category5 2021"
+      },
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title"
+      ]
+    },
+    "addrequest2": {
+      "title": "addrequest2",
+      "example": {
+        "title": "ad 20",
+        "type": "free",
+        "category_id": 4,
+        "advertiser_id": 3,
+        "tags_ids": [
+          1,
+          2
+        ],
+        "start_date": "2021-07-09",
+        "description": "ad20 2021"
+      },
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "category_id": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "advertiser_id": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "tags_ids": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "start_date": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "type",
+        "category_id",
+        "advertiser_id",
+        "tags_ids",
+        "start_date"
+      ]
+    },
+    "getallrequest": {
+      "title": "getallrequest",
+      "example": {
+        "category_ids": [
+          3,
+          1
+        ],
+        "tags_ids": [
+          4
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "category_ids": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "tags_ids": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "required": [
+        "category_ids",
+        "tags_ids"
+      ]
+    },
+    "editrequest2": {
+      "title": "editrequest2",
+      "example": {
+        "title": "ad first",
+        "type": "paid",
+        "category_id": 3,
+        "advertiser_id": 3,
+        "tags_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "start_date": "2021-07-09",
+        "description": "ad first 2021"
+      },
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "category_id": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "advertiser_id": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "tags_ids": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "start_date": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "type",
+        "category_id",
+        "advertiser_id",
+        "tags_ids",
+        "start_date"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "name": "Category",
+      "description": ""
+    },
+    {
+      "name": "Tags",
+      "description": ""
+    },
+    {
+      "name": "Ads",
+      "description": ""
+    }
+  ]
+}
