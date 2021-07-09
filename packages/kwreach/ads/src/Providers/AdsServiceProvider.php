@@ -17,7 +17,7 @@ class AdsServiceProvider extends ServiceProvider {
     {
         $this->app->booted(function () {
             $schedule = app(Schedule::class);
-            $schedule->command('daily:email')->everyMinute();
+            $schedule->command('daily:email')->dailyAt("20:00");
         });
         $this->loadRoutesFrom(__DIR__ . '/../routes/api.php');
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
